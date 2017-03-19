@@ -40,5 +40,15 @@ https://raw.githubusercontent.com/0oVicero0/serverSpeeder_kernel/master/$1/$2/$3
 ```
 wget -O apx.lic http://serverspeeder.azurewebsites.net/lic?mac=$(ifconfig |grep -B1 "$(wget -qO- ipv4.icanhazip.com)" |awk '/HWaddr/{ print $5 }')
 
-```     
+```  
+
+使用方法:
+
+启动命令     /appex/bin/lotServer.sh start 
+
+状态查询     /appex/bin/lotServer.sh status
+
+停止加速     /appex/bin/lotServer.sh stop
+
+
 #仅供学习测试使用,严禁用于商业用途.
